@@ -2,7 +2,12 @@
 
     
   <div data-role="header" data-position="inline">
-    <h1>Demo Welcome to RhoMobile</h1>
+    <h1>Demo T Welcome to RhoMobile</h1>
+
+    <a href="<%= url_for :controller => :Product, :action => :new %>" >
+      Products
+    </a>
+
     <% if Rho::RhoConnectClient.isLoggedIn %>
     <a href="<%= url_for :controller => :Settings, :action => :do_sync %>" class="ui-btn-left" data-icon="refresh">
       Sync
